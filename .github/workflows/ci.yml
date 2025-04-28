@@ -28,4 +28,4 @@ jobs:
       run: rasa data validate
 
     - name: Train model
-      run: rasa train --no-prompt
+      run: rasa train
