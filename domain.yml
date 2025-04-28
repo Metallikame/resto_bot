@@ -1,0 +1,135 @@
+version: "3.1"
+
+intents:
+  - salutation
+  - au_revoir
+  - faire_reservation
+  - annuler_reservation
+  - info_reservation
+  - menu_jour
+  - allergenes
+  - menu_complet
+  - donner_date
+  - donner_nombre
+  - donner_nom
+  - donner_telephone
+  - ajouter_commentaire
+  - donner_code
+  - confirmer
+  - refuser
+  - bot_challenge
+
+entities:
+  - date
+  - nombre
+  - nom
+  - telephone
+  - code
+  - commentaire
+
+slots:
+  date:
+    type: text
+    mappings:
+      - type: from_text
+
+  nombre:
+    type: text
+    mappings:
+      - type: from_text
+
+  nom:
+    type: text
+    mappings:
+      - type: from_text
+
+  telephone:
+    type: text
+    mappings:
+      - type: from_text
+
+  commentaire:
+    type: text
+    mappings:
+      - type: from_text
+
+  code:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_salutation:
+    - text: "Bonjour ! Que puis-je faire pour vous ? 😃\n- Nouvelle Réservation\n- Annuler Réservation\n- Consulter Réservation\n- Voir Menu du jour\n- Voir Liste Allergènes"
+
+  utter_menu_jour:
+    - text: "Voici le menu du jour 🍽️ : [Voir le menu](https://www.lepronto.fr/_ipx/f_webp&fit_cover&q_80&s_2048x2868/blog/exemple-menu-restaurant/exemple-menu-dessert-restaurant.jpg)"
+
+  utter_allergenes:
+    - text: "Voici la liste des allergènes 📋 : [Voir la liste](https://opti-marche.com/wp-content/uploads/2023/02/reglement_inco_allergenes_restauration_collective_guide_pratique.png)"
+
+  utter_ask_date:
+    - text: "Pour quelle date souhaitez-vous réserver ? 📅"
+
+  utter_ask_nombre:
+    - text: "Pour combien de personnes ? 👥"
+
+  utter_ask_nom:
+    - text: "À quel nom dois-je enregistrer la réservation ? 📝"
+
+  utter_ask_telephone:
+    - text: "Quel est votre numéro de téléphone ? 📞"
+
+  utter_ask_commentaire:
+    - text: "Souhaitez-vous ajouter un commentaire ou une demande particulière ? ✍️"
+
+  utter_code_reservation:
+    - text: "Parfait ! Votre code de réservation est **A123456** ✅\nVeuillez le conserver."
+
+  utter_demander_code:
+    - text: "Veuillez entrer votre code de réservation 🔢 :"
+
+  utter_code_ok:
+    - text: "Code correct ✅. Poursuivons."
+
+  utter_code_faux:
+    - text: "Code incorrect ❌. Retour au menu principal."
+
+  utter_annulation_confirmee:
+    - text: "Votre réservation a bien été annulée ✅."
+
+  utter_info_reservation:
+    - text: "Voici les informations de votre réservation 📄."
+
+  utter_au_revoir:
+    - text: "Au revoir et à bientôt 👋 !"
+
+  utter_interruption_refusee:
+    - text: "⚠️ Merci de terminer votre action en cours avant d'effectuer une autre demande."
+
+  utter_bot_challenge:
+    - text: "Je suis un assistant virtuel conçu pour vous aider 🤖."
+
+actions:
+  - action_verifier_code
+  - utter_salutation
+  - utter_menu_jour
+  - utter_allergenes
+  - utter_ask_date
+  - utter_ask_nombre
+  - utter_ask_nom
+  - utter_ask_telephone
+  - utter_ask_commentaire
+  - utter_code_reservation
+  - utter_demander_code
+  - utter_code_ok
+  - utter_code_faux
+  - utter_annulation_confirmee
+  - utter_info_reservation
+  - utter_au_revoir
+  - utter_interruption_refusee
+  - utter_bot_challenge
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

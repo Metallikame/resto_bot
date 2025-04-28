@@ -1,0 +1,26 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"salutation\"}}]": "utter_salutation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"salutation\"}}, {\"prev_action\": {\"action_name\": \"utter_salutation\"}, \"user\": {\"intent\": \"salutation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "utter_au_revoir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}, {\"prev_action\": {\"action_name\": \"utter_au_revoir\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"allergenes\"}}]": "utter_allergenes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"allergenes\"}}, {\"prev_action\": {\"action_name\": \"utter_allergenes\"}, \"user\": {\"intent\": \"allergenes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_bot_challenge",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_bot_challenge\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"menu_jour\"}}]": "utter_menu_jour",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"menu_jour\"}}, {\"prev_action\": {\"action_name\": \"utter_menu_jour\"}, \"user\": {\"intent\": \"menu_jour\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"menu_complet\"}}]": "utter_menu_complet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"menu_complet\"}}, {\"prev_action\": {\"action_name\": \"utter_menu_complet\"}, \"user\": {\"intent\": \"menu_complet\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

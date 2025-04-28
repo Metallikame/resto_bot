@@ -1,0 +1,117 @@
+version: "3.1"
+
+nlu:
+
+- intent: salutation
+  examples: |
+    - bonjour
+    - salut
+    - hello
+    - coucou
+    - hey
+
+- intent: au_revoir
+  examples: |
+    - au revoir
+    - à bientôt
+    - bye
+    - salut
+    - ciao
+
+- intent: faire_reservation
+  examples: |
+    - je veux réserver une table
+    - faire une réservation
+    - réserver pour ce soir
+    - réserver une place
+
+- intent: annuler_reservation
+  examples: |
+    - je veux annuler ma réservation
+    - annuler une réservation
+    - supprimer ma réservation
+    - j'ai changé d'avis
+
+- intent: info_reservation
+  examples: |
+    - quelles sont les infos de ma réservation ?
+    - consulter ma réservation
+    - voir ma réservation
+    - j’aimerais vérifier ma réservation
+
+- intent: menu_jour
+  examples: |
+    - quel est le menu du jour ?
+    - menu aujourd'hui
+    - que mange-t-on aujourd'hui ?
+
+- intent: allergenes
+  examples: |
+    - liste des allergènes
+    - y a-t-il des allergènes ?
+    - informations sur les allergènes
+
+- intent: menu_complet
+  examples: |
+    - je veux voir la carte
+    - montre-moi le menu complet
+    - consulter la carte complète
+
+- intent: donner_date
+  examples: |
+    - demain
+    - ce soir
+    - samedi prochain
+    - le 10 mai
+
+- intent: donner_nombre
+  examples: |
+    - deux personnes
+    - table pour quatre
+    - on sera six
+
+- intent: donner_nom
+  examples: |
+    - mon nom est Dupont
+    - réservation au nom de Martin
+    - c'est pour Julie
+
+- intent: donner_telephone
+  examples: |
+    - mon numéro est 0601020304
+    - téléphone : 0611223344
+    - appelez-moi au 0755667788
+
+- intent: ajouter_commentaire
+  examples: |
+    - je voudrais ajouter un commentaire
+    - note spéciale : anniversaire
+    - je veux un coin tranquille
+
+- intent: donner_code
+  examples: |
+    - mon code est A123456
+    - voici mon code : 654321
+    - code de réservation 123ABC
+
+- intent: confirmer
+  examples: |
+    - oui
+    - d'accord
+    - je confirme
+    - c'est ok
+
+- intent: refuser
+  examples: |
+    - non
+    - je refuse
+    - pas maintenant
+    - ce n’est pas possible
+
+- intent: bot_challenge
+  examples: |
+    - es-tu un robot ?
+    - suis-je en train de parler à un bot ?
+    - tu es humain ?
+    - tu es un assistant virtuel ?
+    - qui es-tu ?

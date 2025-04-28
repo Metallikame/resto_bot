@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  rasa:
+    build: .
+    ports:
+      - "5005:5005"
+    env_file:
+      - .env
+    volumes:
+      - ./models:/app/models
+    command: ["run", "--enable-api", "--cors", "*", "--debug"]
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    command: http rasa:5005
+    depends_on:
+      - rasa
+    ports:
+      - "4040:4040"

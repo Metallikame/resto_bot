@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+
+# 1. Bonjour -> choix possible
+- story: salutation et choix
+  steps:
+    - intent: salutation
+    - action: utter_salutation
+
+# 2. Nouvelle réservation complète
+- story: faire une réservation complète
+  steps:
+    - intent: faire_reservation
+    - action: utter_ask_date
+    - intent: donner_date
+    - action: utter_ask_nombre
+    - intent: donner_nombre
+    - action: utter_ask_nom
+    - intent: donner_nom
+    - action: utter_ask_telephone
+    - intent: donner_telephone
+    - action: utter_ask_commentaire
+    - intent: ajouter_commentaire
+    - action: utter_code_reservation
+
+# 3. Nouvelle réservation sans commentaire
+- story: faire une réservation sans commentaire
+  steps:
+    - intent: faire_reservation
+    - action: utter_ask_date
+    - intent: donner_date
+    - action: utter_ask_nombre
+    - intent: donner_nombre
+    - action: utter_ask_nom
+    - intent: donner_nom
+    - action: utter_ask_telephone
+    - intent: donner_telephone
+    - action: utter_code_reservation
+
+# 4. Annuler réservation (avec vérification de code)
+- story: annuler réservation
+  steps:
+    - intent: annuler_reservation
+    - action: utter_demander_code
+    - intent: donner_code
+    - action: action_verifier_code
+
+# 5. Consulter une réservation (avec vérification de code)
+- story: consulter réservation
+  steps:
+    - intent: info_reservation
+    - action: utter_demander_code
+    - intent: donner_code
+    - action: action_verifier_code
+
+# 6. Demander menu du jour directement
+- story: demander menu du jour
+  steps:
+    - intent: menu_jour
+    - action: utter_menu_jour
+
+# 7. Demander allergènes directement
+- story: demander allergènes
+  steps:
+    - intent: allergenes
+    - action: utter_allergenes
+
+# 8. Dire au revoir
+- story: dire au revoir
+  steps:
+    - intent: au_revoir
+    - action: utter_au_revoir
+
+# 9. Bot challenge
+- story: défi au bot
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_challenge
