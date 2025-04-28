@@ -15,7 +15,7 @@ class ActionVerifierCode(Action):
         code = tracker.latest_message.get('text')
 
         if code == "A123456":
-            dispatcher.utter_message(text="Code correct ✅. Voici votre réservation : (détails fictifs).")
+            dispatcher.utter_message(text="Code correct ✅. Voici les détails de votre réservation : \nCode de réservation : A123456\nNom : ROUZIOUX\nTel : 0102030405\nDate : 2023-04-18\nNombre de personnes : 4\n")
         else:
             dispatcher.utter_message(text="Code incorrect ❌. Merci de vérifier votre code.")
 
