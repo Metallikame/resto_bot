@@ -132,6 +132,13 @@ actions:
 
 forms:
   reservation_form:
+    required_slots:
+      - date
+      - nombre
+      - nom
+      - telephone
+      - commentaire
+
 
 session_config:
   session_expiration_time: 60

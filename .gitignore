@@ -1,7 +1,19 @@
-models/
+# Rasa cache
+.rasa/
 __pycache__/
 *.pyc
-.idea/
-.vscode/
+
+# Virtualenv
 venv310/
 .env
+.venv/
+
+# Modèles entraînés
+models/
+
+# Logs
+*.log
+
+# VSCode ou PyCharm caches si besoin
+.vscode/
+.idea/
