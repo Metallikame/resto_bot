@@ -63,10 +63,10 @@ responses:
     - text: "Bonjour ! Que puis-je faire pour vous ? 😃\n- Nouvelle Réservation\n- Annuler Réservation\n- Consulter Réservation\n- Voir Menu du jour\n- Voir Liste Allergènes"
 
   utter_menu_jour:
-    - text: "Voici le menu du jour 🍽️ : [Voir le menu](https://www.lepronto.fr/_ipx/f_webp&fit_cover&q_80&s_2048x2868/blog/exemple-menu-restaurant/exemple-menu-dessert-restaurant.jpg)"
+    - text: "Voici le menu du jour 🍽️ : https://www.lepronto.fr/_ipx/f_webp&fit_cover&q_80&s_2048x2868/blog/exemple-menu-restaurant/exemple-menu-dessert-restaurant.jpg"
 
   utter_allergenes:
-    - text: "Voici la liste des allergènes 📋 : [Voir la liste](https://opti-marche.com/wp-content/uploads/2023/02/reglement_inco_allergenes_restauration_collective_guide_pratique.png)"
+    - text: "Voici la liste des allergènes 📋 : https://www.zatyoo.fr/Documentation/Officielle/DocumentationZatyooTouch/Cartes/img/Menu.0.png"
 
   utter_ask_date:
     - text: "Pour quelle date souhaitez-vous réserver ? 📅"
