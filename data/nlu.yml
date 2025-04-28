@@ -15,7 +15,6 @@ nlu:
     - au revoir
     - à bientôt
     - bye
-    - salut
     - ciao
 
 - intent: faire_reservation
